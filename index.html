@@ -27,6 +27,78 @@
         <p>Por favor habilita su ejecución y
             recarga la página.</p>
     </noscript>
+
+    <div class="wrap w-[90%] sm:w-[100%] sm:w-[100%]">
+        <!-- Widget -->
+        <div class="widget w-[40%] m-[2em] max-[500px]:w-[auto] sm:w-[auto]">
+            <!-- Fecha -->
+            <div class="fecha text-white rounded-xl">
+                <p id="diaSemana" class="diaSemana text-white"></p>
+                <p id="dia" class="dia text-white"></p>
+                <p>de</p>
+                <p id="mes" class="mes text-white"></p>
+                <p>del</p>
+                <p id="year" class="year text-white"></p>
+            </div>
+            <!-- Reloj -->
+            <div class="reloj text-white rounded-xl">
+                <p id="horas" class="horas text-white"></p>
+                <p>:</p>
+                <p id="minutos" class="minutos text-white"></p>
+                <p>:</p>
+                <div class="caja-segundos">
+                    <p id="ampm" class="ampm text-white"></p>
+                    <p id="segundos" class="segundos text-white"></p>
+                </div>
+            </div>
+
+            <div id="contenedor-clima" class="w-full justify-center flex flex-col mt-2 text-white rounded-t-xl">
+                <div class="bg-[#3b3b3bdb] rounded-t-xl w-full h-[150px]">
+                    <div class="w-[100%] h-[100%] rounded-l-xl">
+                        <div class="w-[100%] h-[100%] flex flex-col gap-2 justify-center content-center items-center ">
+                            <img id="img-clima" src="#" class="text-[16px] text-white w-[100px]" alt="Imagen Clima" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-600 rounded-b-xl w-full p-1 h-[150px] flex">
+                    <div class="bg-black/50 w-[33%] h-[100%] p-3 rounded-bl-xl">
+                        <div class="w-[100%] h-[100%] flex flex-col gap-2 justify-center content-center items-center">
+                            <div class="w-[100%] h-[30%] flex flex-col gap-2 justify-center content-center items-center">
+                                <i class="fas fa-map-marker-alt text-[32px] max[768px]:text-[20px] max[500px]:text-[10px]"></i>
+                            </div>
+                            <div class="w-[90%] h-[70%] flex flex-col gap-2">
+                                <p id="ciudad" class="text-center text-[20px] max[768px]:text-[16px] max[500px]:text-[14px]" title="Ciudad/Provincia"></p>
+                                <p id="pais" class="text-center text-[20px] max[768px]:text-[16px] max[500px]:text-[14px]" title="País"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 w-[33%] h-[100%] p-3">
+                        <div class="w-[100%] h-[100%] flex flex-col gap-4 justify-center content-center items-center ">
+                            <div class="w-[100%] h-[30%] flex flex-col gap-2 justify-center content-center items-center">
+                                <i class="fas fa-thermometer-quarter text-[32px] max[768px]:text-[20px] max[500px]:text-[10px]"></i>
+                            </div>
+                            <div class="w-[90%] h-[70%] flex flex-col gap-2">
+                                <p id="temperatura" class="text-[30px] text-center max[768px]:text-[20px] max[500px]:text-[14px] font-semibold"
+                                    title="Temperatura"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black/10 w-[34%] h-[100%] p-3 rounded-br-xl">
+                        <div class="w-[100%] h-[100%] flex flex-col gap-4 justify-center content-center items-center ">
+                            <div class="w-[100%] h-[30%] flex flex-col gap-2 justify-center content-center items-center">
+                                <i class="fas fa-tint text-[32px] max[768px]:text-[20px] max[500px]:text-[10px]"></i>
+                            </div>
+                            <div class="w-[90%] h-[70%] flex flex-col gap-2">
+                                <p id="humedad" class="text-[30px] text-center max[768px]:text-[20px] max[500px]:text-[14px] font-semibold" title="Humedad"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
 </body>
 
 </html>
