@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* NOSCRIPT */
+
+noscript {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 40px;
+    top: 0;
+}
+
+noscript>i {
+    color: red;
+    font-size: 90px;
+    padding: 50px 0;
+}
+
+noscript>p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*  */
+
+/* .wrap {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+} */
+
+/* .widget {
+    width: 40%;
+    margin: 2em;
+} */
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha {
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.3125rem;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj, .weather {
+    font-family: Oswald, Arial;
+    width: 100%;
+    padding: 20px;
+    font-size: 8em;
+    text-align: center;
+    background: rgba(0, 0, 0, .8);
+}
+
+.reloj .caja-segundos {
+    display: inline-block;
+}
+
+.reloj .segundos, .reloj .ampm {
+    font-size: 4rem;
+    display: block;
+}
+
+/* ------------------ */
+/* AJUSTE DE PANTALLA */
+/* ------------------ */
+
+@media screen and (max-width: 768px){
+    .fecha {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .reloj, .weather {
+        padding: 10px;
+        font-size: 2em;
+    }
+    .reloj .segundos, .reloj .ampm {
+        font-size: 1rem;
+    }
+}
+
+
